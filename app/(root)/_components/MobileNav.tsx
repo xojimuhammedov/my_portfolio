@@ -8,7 +8,6 @@ import { cn } from '@/lib/utils'
 import { Menu } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-
 function MobileMenu() {
 	const pathname = usePathname()
 
