@@ -1,12 +1,15 @@
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Dot, Home, Mail, Phone, Send } from 'lucide-react'
+import ContactForm from '@/components/forms/contact'
+import { Dot, Home, Mail, Phone } from 'lucide-react'
+import { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+	title: 'Contact Us',
+}
 
 function ContactPage() {
 	return (
-		<div className='max-w-6xl mx-auto'>
+		<div className='max-w-6xl mx-auto font-workSans'>
 			<div className='relative min-h-[40vh] flex items-center justify-end flex-col'>
 				<h2 className='text-center text-4xl section-title font-creteRound'>
 					<span>Contact</span>
@@ -43,18 +46,7 @@ function ContactPage() {
 				</div>
 				<div>
 					<h1 className='text-4xl font-creteRound mb-2'>Contact form</h1>
-					<div className='flex flex-col gap-3'>
-						<Textarea
-							className='resize-none h-32'
-							placeholder='Write your question...'
-						/>
-						<Input placeholder='Email address' />
-						<Input placeholder='Your name here' />
-						<Button className='w-fit' size={'lg'}>
-							<span>Send</span>
-							<Send className='w-4 h-4' />
-						</Button>
-					</div>
+					<ContactForm />
 				</div>
 			</div>
 		</div>
