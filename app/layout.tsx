@@ -3,6 +3,7 @@ import { Toaster } from '@/components/ui/sonner'
 import { ChildProps } from '@/types'
 import type { Metadata } from 'next'
 import { Crete_Round, Work_Sans } from 'next/font/google'
+import Head from 'next/head'
 import NextTopLoader from 'nextjs-toploader'
 import './globals.css'
 
@@ -46,6 +47,24 @@ export const metadata: Metadata = {
 function RootLayout({ children }: ChildProps) {
 	return (
 		<html lang='en' suppressHydrationWarning>
+			<Head>
+				<script
+					async
+					src={`https://www.googletagmanager.com/gtag/js?id=G-HT4ZFGC34E`}
+				/>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-HT4ZFGC34E', {
+              page_path: window.location.pathname,
+            });
+          `,
+					}}
+				/>
+			</Head>
 			<body
 				className={`${creteRound.variable} ${workSans.variable} overflow-x-hidden`}
 			>
