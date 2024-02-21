@@ -50,7 +50,7 @@ function RootLayout({ children }: ChildProps) {
 			<Head>
 				<script
 					async
-					src={`https://www.googletagmanager.com/gtag/js?id=G-HT4ZFGC34E`}
+					src={`https://www.googletagmanager.com/gtag/js?id=G-VK0ZCSXFE6`}
 				/>
 				<script
 					dangerouslySetInnerHTML={{
