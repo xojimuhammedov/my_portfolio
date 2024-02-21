@@ -14,7 +14,7 @@ function MobileMenu() {
 
 	return (
 		<Sheet>
-			<SheetTrigger asChild className='flex mr-14 md:hidden'>
+			<SheetTrigger asChild className='flex md:hidden'>
 				<Button size={'icon'} variant={'ghost'}>
 					<Menu />
 				</Button>

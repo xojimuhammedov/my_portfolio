@@ -11,8 +11,6 @@ interface Props extends IBlog {
 }
 
 function BlogCard(blog: Props) {
-	console.log(blog.tag.slug)
-
 	return (
 		<div
 			className={cn(
