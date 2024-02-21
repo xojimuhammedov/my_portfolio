@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 	],
 	icons: { icon: '/favicon.png' },
 	keywords:
-		'otabekdev, programming articles, programming language hacks, programming language tricks, python hacks and tricks, javaScript hacks and tricks, java hacks and tricks, c++ hacks and tricks, web development tips, software engineering insights, coding tutorials and guides, frontend development techniques, backend development strategies, algorithm optimization tricks, data structure hacks, framework comparisons, debugging secrets, version control mastery, agile development methodologies, Tech industry insights, articles about programming, otabekdev articles gtfrdcvgbhfvgbffvgbfredfgrde',
+		'otabekdev, programming articles, programming language hacks, programming language tricks, python hacks and tricks, javaScript hacks and tricks, java hacks and tricks, c++ hacks and tricks, web development tips, software engineering insights, coding tutorials and guides, frontend development techniques, backend development strategies, algorithm optimization tricks, data structure hacks, framework comparisons, debugging secrets, version control mastery, agile development methodologies, Tech industry insights, articles about programming, otabekdev articles',
 	openGraph: {
 		title: 'OtabekDev — articles about programming',
 		description:
