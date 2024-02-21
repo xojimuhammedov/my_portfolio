@@ -1,9 +1,9 @@
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import { ChildProps } from '@/types'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Crete_Round, Work_Sans } from 'next/font/google'
-import Head from 'next/head'
 import NextTopLoader from 'nextjs-toploader'
 import './globals.css'
 
@@ -47,24 +47,6 @@ export const metadata: Metadata = {
 function RootLayout({ children }: ChildProps) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<Head>
-				<script
-					async
-					src={`https://www.googletagmanager.com/gtag/js?id=G-VK0ZCSXFE6`}
-				/>
-				<script
-					dangerouslySetInnerHTML={{
-						__html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-HT4ZFGC34E', {
-              page_path: window.location.pathname,
-            });
-          `,
-					}}
-				/>
-			</Head>
 			<body
 				className={`${creteRound.variable} ${workSans.variable} overflow-x-hidden`}
 			>
@@ -85,7 +67,7 @@ function RootLayout({ children }: ChildProps) {
 						shadow='0'
 						zIndex={1600}
 					/>
-					{children}
+					<Analytics mode={'production'} />;{children}
 					<Toaster position='top-center' />
 				</ThemeProvider>
 			</body>

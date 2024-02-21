@@ -18,7 +18,7 @@ async function HomePage() {
 
 			<div className='flex flex-col space-y-24 mt-24'>
 				{blogs.map(blog => (
-					<BlogCard key={blog.description} {...blog} isVertical />
+					<BlogCard key={blog.description} {...blog} />
 				))}
 			</div>
 		</div>
