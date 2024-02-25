@@ -3,12 +3,14 @@
 import ModeToggle from '@/components/shared/ModeToggle'
 import { navLinks } from '@/constants'
 import { cn } from '@/lib/utils'
+import { UserButton, useUser } from '@clerk/nextjs'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import GlobalSearch from './GlobalSearch'
 import MobileMenu from './MobileNav'
 
 function Navbar() {
+	const { user, isLoaded } = useUser()
 	const pathname = usePathname()
 
 	return (
@@ -34,9 +36,14 @@ function Navbar() {
 					))}
 				</div>
 				{/* Search */}
-				<div className='flex items-center gap-1'>
+				<div className='flex font-creteRound items-center gap-3'>
 					<GlobalSearch />
 					<ModeToggle />
+					{isLoaded && user && (
+						<>
+							<UserButton afterSignOutUrl='/' />
+						</>
+					)}
 					<MobileMenu />
 				</div>
 			</div>

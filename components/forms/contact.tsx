@@ -15,12 +15,21 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Send } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { toast } from 'sonner'
 import { Textarea } from '../ui/textarea'
 
 function ContactForm() {
+	const input = useRef()
 	const [isLoading, setIsLoading] = useState(false)
+	const [randomNumbers, setRandomNumbers] = useState('')
+
+	useEffect(() => {
+		const randomNums = Array.from({ length: 5 }, () =>
+			Math.floor(Math.random() * 10)
+		).join('')
+		setRandomNumbers(randomNums)
+	}, [])
 
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
@@ -28,6 +37,7 @@ function ContactForm() {
 			email: '',
 			message: '',
 			name: '',
+			recaptcha: '',
 		},
 	})
 
@@ -116,6 +126,21 @@ Message: ${values.message}
 							</FormItem>
 						)}
 					/>
+					<div className='flex flex-col gap-3'>
+						<FormField
+							control={form.control}
+							name='recaptcha'
+							render={({ field }) => (
+								<FormItem>
+									<FormControl>
+										<Input type='text' {...field} />
+									</FormControl>
+									<FormMessage />
+								</FormItem>
+							)}
+						/>
+						<Input type='text' disabled value={randomNumbers} />
+					</div>
 					<Button className='w-fit' size={'lg'}>
 						<span>Send</span>
 						<Send className='w-4 h-4' />

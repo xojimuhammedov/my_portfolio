@@ -48,6 +48,20 @@
 	}
 }
 
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #000;
+	border-radius: 10px;
+}
+
 @layer base {
 	* {
 		@apply border-border;

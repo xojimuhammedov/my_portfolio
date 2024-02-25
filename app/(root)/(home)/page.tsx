@@ -4,6 +4,7 @@ import { getBlogs } from '@/service/blog.service'
 
 async function HomePage() {
 	const blogs = await getBlogs()
+
 	return (
 		<div className='max-w-3xl md:max-w-6xl mx-auto'>
 			<div className='relative min-h-[60vh] flex items-center justify-center'>

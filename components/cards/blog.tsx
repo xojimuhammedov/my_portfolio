@@ -26,7 +26,7 @@ function BlogCard(blog: Props) {
 							height={335}
 							src={blog.image?.url}
 							alt={blog.title}
-							className='px-2 !max-w-[550px] !max-h-[250px] md:px-7 !rounded-xl group-hover:-translate-y-7 -translate-y-6 transition-all object-cover grayscale group-hover:grayscale-0 max-md:-translate-y-2 max-md:group-hover:-translate-y-3'
+							className='px-2 !max-w-[250px] md:!max-w-[550px] md:!max-h-[250px] md:px-7 !rounded-xl group-hover:-translate-y-7 -translate-y-6 transition-all object-cover grayscale group-hover:grayscale-0 max-md:-translate-y-2 max-md:group-hover:-translate-y-3'
 						/>
 					</div>
 				</div>

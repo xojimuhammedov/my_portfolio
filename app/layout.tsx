@@ -1,10 +1,12 @@
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import { ChildProps } from '@/types'
+import { ClerkProvider } from '@clerk/nextjs'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Crete_Round, Work_Sans } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
+import GoogleCaptchaWrapper from './GoogleCaptchaWrapper'
 import './globals.css'
 
 const creteRound = Crete_Round({
@@ -46,32 +48,35 @@ export const metadata: Metadata = {
 
 function RootLayout({ children }: ChildProps) {
 	return (
-		<html lang='en' suppressHydrationWarning>
-			<body
-				className={`${creteRound.variable} ${workSans.variable} overflow-x-hidden`}
-			>
-				<ThemeProvider
-					attribute='class'
-					defaultTheme='system'
-					enableSystem
-					disableTransitionOnChange
-					storageKey='blog-theme'
+		<ClerkProvider>
+			<html lang='en' suppressHydrationWarning>
+				<body
+					className={`${creteRound.variable} ${workSans.variable} overflow-x-hidden`}
 				>
-					<NextTopLoader
-						color='#2299DD'
-						crawlSpeed={200}
-						showSpinner={false}
-						height={3}
-						easing='ease-in-out'
-						speed={100}
-						shadow='0'
-						zIndex={1600}
-					/>
-					<Analytics mode={'production'} />;{children}
-					<Toaster position='top-center' />
-				</ThemeProvider>
-			</body>
-		</html>
+					<ThemeProvider
+						attribute='class'
+						defaultTheme='system'
+						enableSystem
+						disableTransitionOnChange
+						storageKey='blog-theme'
+					>
+						<NextTopLoader
+							color='#2299DD'
+							crawlSpeed={200}
+							showSpinner={false}
+							height={3}
+							easing='ease-in-out'
+							speed={100}
+							shadow='0'
+							zIndex={1600}
+						/>
+						<Analytics mode={'production'} />
+						<GoogleCaptchaWrapper>{children}</GoogleCaptchaWrapper>
+						<Toaster position='top-center' />
+					</ThemeProvider>
+				</body>
+			</html>
+		</ClerkProvider>
 	)
 }
 
