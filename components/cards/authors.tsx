@@ -7,7 +7,7 @@ function AuthorsCard(authors: IAuthor) {
 		<div>
 			<Link
 				href={`/author/${authors.id}`}
-				className='flex flex-col space-y-2 w-52 text-center'
+				className='flex flex-col w-52 text-center'
 			>
 				<div className='w-full h-52 relative'>
 					<Image
