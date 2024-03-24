@@ -74,7 +74,7 @@ function RootLayout({ children }: ChildProps) {
 						{children}
 						<Toaster position='top-center' />
 					</ThemeProvider>
-					<GoogleAnalytics gaId='G-Y89K97J7N2' />
+					<GoogleAnalytics gaId='G-0L9LHJJVJN' />
 				</body>
 			</html>
 		</ClerkProvider>
