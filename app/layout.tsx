@@ -2,7 +2,6 @@ import { ThemeProvider } from '@/components/providers/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import { ChildProps } from '@/types'
 import { ClerkProvider } from '@clerk/nextjs'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Crete_Round, Work_Sans } from 'next/font/google'
@@ -74,7 +73,11 @@ function RootLayout({ children }: ChildProps) {
 						{children}
 						<Toaster position='top-center' />
 					</ThemeProvider>
-					<GoogleAnalytics gaId='G-0L9LHJJVJN' />
+					<script
+						defer
+						data-domain='otabekdev-blog.vercel.app'
+						src='https://plausible.io/js/script.js'
+					></script>
 				</body>
 			</html>
 		</ClerkProvider>
