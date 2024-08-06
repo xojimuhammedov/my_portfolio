@@ -35,13 +35,13 @@ function ContactPage() {
 						forward to hearing from you!
 					</p>
 
-					<div className='mt-12 flex items-center gap-3'>
+					{/* <div className='mt-12 flex items-center gap-3'>
 						<Mail className='w-4 h-4' />
 						<p className='text-sm'>info@otabekdev.com</p>
-					</div>
+					</div> */}
 					<div className='mt-12 flex items-center gap-3'>
 						<Phone className='w-4 h-4' />
-						<p className='text-sm'>+998 90 733 97 76</p>
+						<p className='text-sm'>+998 99 002 73 91</p>
 					</div>
 				</div>
 				<div>
