@@ -20,7 +20,7 @@ function MobileMenu() {
 			</SheetTrigger>
 			<SheetContent side={'left'}>
 				<Link href={'/'}>
-					<h1 className='text-4xl font-creteRound'>OtabekDev</h1>
+					<h1 className='text-4xl font-creteRound'>MuhammadislomDev</h1>
 				</Link>
 				<Separator className='my-3' />
 				<div className='flex flex-col space-y-3'>

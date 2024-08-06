@@ -40,7 +40,6 @@ export const metadata: Metadata = {
     // images: "/favicon.png",
     countryName: "America",
     siteName: "Muhammadislom",
-    emails: "abdiraimov032@gmail.com",
   },
 };
 
