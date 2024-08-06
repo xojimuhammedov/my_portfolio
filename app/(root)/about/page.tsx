@@ -27,7 +27,7 @@ async function AboutPage() {
         </div>
       </div>
       <h1 className="text-center text-4xl font-creteRound">
-        We are the OtabekDev Community, <br /> Team of content writers and
+        We are the Muhammadislom Community, <br /> Team of content writers and
         designers.
       </h1>
 
