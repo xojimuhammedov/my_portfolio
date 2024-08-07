@@ -73,9 +73,9 @@ async function AboutPage() {
         </p>
       </div>
 
-      <h2 className="text-center text-4xl section-title font-creteRound my-12">
+      {/* <h2 className="text-center text-4xl section-title font-creteRound my-12">
         <span>Our writers</span>
-      </h2>
+      </h2> */}
 
       <div className="flex justify-around max-md:flex-col max-md:space-y-4 max-md:items-center">
         {/* {authors.map(item => (
