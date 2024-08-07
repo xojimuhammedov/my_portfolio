@@ -19,29 +19,29 @@ const workSans = Work_Sans({
   variable: "--font-workSans",
 });
 
-// export const metadata: Metadata = {
-//   metadataBase: new URL("https://www.muhammadislom.uz/"),
-//   title: "Muhammadislom — articles about programming",
-//   description:
-//     "Muhammadislom offers a variety of insightful articles covering programming topics, ranging from fundamental concepts to advanced techniques. Explore practical tutorials, insightful discussions, and expert tips to enhance your programming skills.",
-//   authors: [
-//     { name: "Muhammadislom Hojimuhammedov", url: "https://www.muhammadislom.uz/" },
-//   ],
-//   // icons: { icon: "/favicon.png" },
-//   keywords:
-//     "Muhammadislom, programming articles, programming language hacks, programming language tricks, python hacks and tricks, javaScript hacks and tricks, java hacks and tricks, c++ hacks and tricks, web development tips, software engineering insights, coding tutorials and guides, frontend development techniques, backend development strategies, algorithm optimization tricks, data structure hacks, framework comparisons, debugging secrets, version control mastery, agile development methodologies, Tech industry insights, articles about programming, Muhammadislom articles",
-//   openGraph: {
-//     title: "Muhammadislom — articles about programming",
-//     description:
-//       "Muhammadislom offers a variety of insightful articles covering programming topics, ranging from fundamental concepts to advanced techniques. Explore practical tutorials, insightful discussions, and expert tips to enhance your programming skills",
-//     type: "website",
-//     url: "https://www.muhammadislom.uz/",
-//     locale: "en_EN",
-//     // images: "/favicon.png",
-//     countryName: "America",
-//     siteName: "Muhammadislom",
-//   },
-// };
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.muhammadislom.uz/"),
+  title: "Muhammadislom — articles about programming",
+  description:
+    "Muhammadislom offers a variety of insightful articles covering programming topics, ranging from fundamental concepts to advanced techniques. Explore practical tutorials, insightful discussions, and expert tips to enhance your programming skills.",
+  authors: [
+    { name: "Muhammadislom Hojimuhammedov", url: "https://www.muhammadislom.uz/" },
+  ],
+  icons: { icon: "/logo.jpg" },
+  keywords:
+    "Muhammadislom, programming articles, programming language hacks, programming language tricks, python hacks and tricks, javaScript hacks and tricks, java hacks and tricks, c++ hacks and tricks, web development tips, software engineering insights, coding tutorials and guides, frontend development techniques, backend development strategies, algorithm optimization tricks, data structure hacks, framework comparisons, debugging secrets, version control mastery, agile development methodologies, Tech industry insights, articles about programming, Muhammadislom articles",
+  openGraph: {
+    title: "Muhammadislom — articles about programming",
+    description:
+      "Muhammadislom offers a variety of insightful articles covering programming topics, ranging from fundamental concepts to advanced techniques. Explore practical tutorials, insightful discussions, and expert tips to enhance your programming skills",
+    type: "website",
+    url: "https://www.muhammadislom.uz/",
+    locale: "en_EN",
+    images: "/logo.jpg",
+    countryName: "America",
+    siteName: "Muhammadislom",
+  },
+};
 
 function RootLayout({ children }: ChildProps) {
   return (
