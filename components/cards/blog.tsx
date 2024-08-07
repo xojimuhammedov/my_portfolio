@@ -12,13 +12,11 @@ function BlogCard({ img, title, subtitle, pathname }: any) {
     <div className={cn("grid gap-4 group grid-cols-1 md:grid-cols-2")}>
       <Link target="_blank" href={pathname}>
         <div>
-          <div className="relative bg-secondary rounded-md !max-w-[650px] !max-h-[335px]">
+          <div className="relative bg-secondary rounded-md !max-w-[650px] !max-h-[450px]">
             <Image
-              width={650}
-              height={335}
               src={img}
               alt={"BlogImage"}
-              className="px-2 !max-w-[250px] md:!max-w-[550px] md:!max-h-[380px] md:px-7 !rounded-xl group-hover:-translate-y-7 -translate-y-6 transition-all object-cover grayscale group-hover:grayscale-0 max-md:-translate-y-2 max-md:group-hover:-translate-y-3"
+              className="px-2 !max-w-100 md:!max-w-[550px] md:!max-h-[450px] xs:h-[300px] lg:h-[420px] md:px-7 !rounded-xl group-hover:-translate-y-7 -translate-y-6 transition-all object-cover grayscale group-hover:grayscale-0 max-md:-translate-y-2 max-md:group-hover:-translate-y-3"
             />
           </div>
         </div>
@@ -44,7 +42,7 @@ function BlogCard({ img, title, subtitle, pathname }: any) {
         </Link>
 
         {/* Author */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center flex-wrap	 gap-3">
           <div className="flex items-center gap-2">
             <Image
               src={AvatarIcon}

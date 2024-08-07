@@ -3,7 +3,7 @@ import BgArrow from "@/components/shared/bgArrow";
 import Image from "next/image";
 
 import BlogImage from "../../../public/blogs/blog.jpg";
-import AlStarImage from "../../../public/about/04.jpg";
+import AlStarImage from "../../../public/about/10.jpg";
 import SerEnergies from "../../../public/about/05.jpg";
 import AssiTech from "../../../public/about/07.jpg";
 import SamTrip from "../../../public/about/09.jpg";
