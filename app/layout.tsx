@@ -75,6 +75,19 @@ function RootLayout({ children }: ChildProps) {
           defer
           data-domain="https://my-portfolio-vp1w.vercel.app/"
           src="https://plausible.io/js/script.js"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HDCZR569H1"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QT8WLTHLP7');
+          `,
+          }}
+        />
       </body>
     </html>
   );
