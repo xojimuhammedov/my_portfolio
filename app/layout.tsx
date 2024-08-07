@@ -71,10 +71,10 @@ function RootLayout({ children }: ChildProps) {
           {children}
           <Toaster position="top-center" />
         </ThemeProvider>
-        {/* <script
-            defer
-            data-domain="otabekdev-blog.vercel.app"
-            src="https://plausible.io/js/script.js"></script> */}
+        <script
+          defer
+          data-domain="https://my-portfolio-vp1w.vercel.app/"
+          src="https://plausible.io/js/script.js"></script>
       </body>
     </html>
   );
