@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Us, website, site, sayt, sayt yaratish, bot,сайт яратиш",
 };
 
 function ContactPage() {

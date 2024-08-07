@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us, website, site, sayt",
+  title: "About Us, website, site, sayt, sayt yaratish, bot,сайт яратиш",
 };
 
 async function AboutPage() {

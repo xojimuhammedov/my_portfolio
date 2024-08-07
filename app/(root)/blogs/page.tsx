@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "All articles",
+  title: "All articles, website, site, sayt, sayt yaratish, bot,сайт яратиш",
 };
 
 async function BlogsPage() {

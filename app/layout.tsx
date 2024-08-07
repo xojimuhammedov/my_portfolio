@@ -25,11 +25,14 @@ export const metadata: Metadata = {
   description:
     "Muhammadislom offers a variety of insightful articles covering programming topics, ranging from fundamental concepts to advanced techniques. Explore practical tutorials, insightful discussions, and expert tips to enhance your programming skills.",
   authors: [
-    { name: "Muhammadislom Hojimuhammedov", url: "https://www.muhammadislom.uz/" },
+    {
+      name: "Muhammadislom Hojimuhammedov",
+      url: "https://www.muhammadislom.uz/",
+    },
   ],
   icons: { icon: "/logo.jpg" },
   keywords:
-    "Muhammadislom, programming articles, programming language hacks, programming language tricks, python hacks and tricks, javaScript hacks and tricks, java hacks and tricks, c++ hacks and tricks, web development tips, software engineering insights, coding tutorials and guides, frontend development techniques, backend development strategies, algorithm optimization tricks, data structure hacks, framework comparisons, debugging secrets, version control mastery, agile development methodologies, Tech industry insights, articles about programming, Muhammadislom articles",
+    "Muhammadislom, website, site, sayt, sayt yaratish, bot, сайт яратиш,сайт , programming articles, programming language hacks, programming language tricks, python hacks and tricks, javaScript hacks and tricks, java hacks and tricks, c++ hacks and tricks, web development tips, software engineering insights, coding tutorials and guides, frontend development techniques, backend development strategies, algorithm optimization tricks, data structure hacks, framework comparisons, debugging secrets, version control mastery, agile development methodologies, Tech industry insights, articles about programming, Muhammadislom articles",
   openGraph: {
     title: "Muhammadislom — articles about programming",
     description:
