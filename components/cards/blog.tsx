@@ -10,7 +10,7 @@ import AvatarIcon from "../../public/blogs/123.jpg";
 function BlogCard({ img, title, subtitle, pathname }: any) {
   return (
     <div className={cn("grid gap-4 group grid-cols-1 md:grid-cols-2")}>
-      <Link href={`/`}>
+      <Link target="_blank" href={pathname}>
         <div>
           <div className="relative bg-secondary rounded-md !max-w-[650px] !max-h-[335px]">
             <Image
@@ -24,7 +24,7 @@ function BlogCard({ img, title, subtitle, pathname }: any) {
         </div>
       </Link>
       <div className="flex flex-col space-y-4">
-        <Link href={`/`} className="flex flex-col space-y-4">
+        <Link target="_blank" href={pathname} className="flex flex-col space-y-4">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <CalendarDays className="w-5 h-5" />
@@ -57,14 +57,14 @@ function BlogCard({ img, title, subtitle, pathname }: any) {
           </div>
           <Dot />
           <div className="flex items-center gap-2">
-            <Link href={`/`}>
+            <Link target="_blank" href={pathname}>
               <Badge variant={"secondary"} role="button">
                 <Tag className="w-3 h-3 me-2" />
                 busines
               </Badge>
             </Link>
             <Dot />
-            <Link href={`/`}>
+            <Link target="_blank" href={pathname}>
               <Badge variant={"outline"} role="button">
                 <Layers2 className="w-3 h-3 me-2" />
                 seo
@@ -76,8 +76,7 @@ function BlogCard({ img, title, subtitle, pathname }: any) {
             href={pathname}
             target="_blank"
             className={cn(
-              "hover:bg-blue-400/20 py-1 px-3 w-[108px] cursor-pointer rounded-sm transition-colors"
-              // pathname === nav.route && "text-blue-400"
+              "hover:bg-blue-400/20 py-1 px-3 w-[108px] cursor-pointer text-blue-400 rounded-sm transition-colors"
             )}>
             Read More
           </Link>
